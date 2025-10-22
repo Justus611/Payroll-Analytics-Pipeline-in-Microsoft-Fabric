@@ -83,31 +83,31 @@ This project demonstrates an end-to-end data engineering and analytics workflow 
 <img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/897c614a-aefb-4357-a0db-b75a78b59be4" />
 
 # Recommendations
-1. Architecture & Design
+1. # Architecture & Design
 
 .Adopt a Medallion Architecture (Bronze–Silver–Gold) for clarity and maintainability.
 
 .Use separate Lakehouses for each layer.
 
-2. Automation & Monitoring
+2. # Automation & Monitoring
 
 . Schedule pipeline refreshes in Fabric Data Factory.
 
 . Add alert rules for failed pipeline runs (via Power Automate or email).
 
-3. Performance Optimization
+3. # Performance Optimization
 
 . Use Delta tables with partitioning (e.g., by pay_date or agency_id).
 
 . Implement Materialized Lake Views for frequently queried aggregates.
 
-4. Governance & Security
+4. # Governance & Security
 
 . Configure Role-Based Access Control (RBAC) in Fabric Workspace.
 
 . Mask or hash sensitive employee data.
 
-5. Documentation & Version Control
+5. # Documentation & Version Control
 
 . Store all notebooks, SQL, and pipeline JSONs in GitHub.
 
